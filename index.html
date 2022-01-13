@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+		<nav class="bg-black z-50" id="head">
+			<div class="max-w-10xl  px-4">
+				<div class="flex ">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+								<!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+								<span class="font-semibold text-gray-500 text-lg">Cryptocornya</span>
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center ml-auto ">
+
+						<div class="hidden md:flex items-center space-x-1">
+							<a href="" class="active transition ease-in-out delay-150 duration-300 py-4 px-2 border-b-4  hover:border-white text-white border-white  font-semibold hover:text-white ">Home</a>
+							<a href="" class="transition ease-in-out delay-150 duration-300 py-4 px-2 text-gray-500 font-semibold hover:text-white border-b-4 border-black  hover:border-white">Services</a>
+							<a href="" class="transition ease-in-out delay-150 duration-300 py-4 px-2 text-gray-500 font-semibold hover:text-white border-b-4 border-black  hover:border-white">About</a>
+							<a href="" class="transition ease-in-out delay-150 duration-300 py-4 px-2 text-gray-500 font-semibold hover:text-white border-b-4 border-black  hover:border-white">Contact Us</a>
+							<a href="" class="transition ease-in-out delay-150 duration-300 py-4 px-2 text-gray-500 font-semibold hover:text-white border-b-4 border-black  hover:border-white">Sign in</a>
+						</div>
+						<a href="" class="border-2 border-transparent hover:border-white transition ease-in-out delay-150 duration-300 px-2 font-medium hover:text-white hover:bg-black mr-1 bg-white text-black rounded ">Sign Up</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center ml-auto">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-white "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu pl-4 md:hidden">
+				<ul class="h-80">
+					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-black font-semibold">Home</a></li>
+					<li><a href="#services" class="block text-sm px-2 py-4 text-gray-500 hover:bg-black">Services</a></li>
+					<li><a href="#about" class="block text-sm px-2 py-4 text-gray-500 hover:bg-black">About</a></li>
+					<li><a href="#contact" class="block text-sm px-2 py-4 text-gray-500 hover:bg-black">Contact Us</a></li>
+          <li><a href="#signin" class="block py-2 px-2 text-gray-500 mb-2 rounded hover:bg-white hover:text-black ">Log In</a></li>
+          <li><a href="#signup" class="inline-block py-2 px-2 bg-white hover:text-black  rounded  transition">Sign Up</a></li> 
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+    <!-- header End -->
+    
+    
+
+
+
+    
+    <div class="h-24 bg-green-400 text-gray-200 flex justify-center items-center"></div>
+      <div class="h-96 bg-green-400 text-gray-200 flex justify-center items-center">
+        
+          <h1 class="text-7xl "> Boilerplate </h1>
+      </div>
+      <div class="h-24 bg-green-400 text-gray-200 flex justify-center items-center"></div>
+
+      <footer class="bg-black">
+        <div class="container flex flex-col flex-wrap px-4 py-16 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap ">
+          <div class="justify-between w-full mt-4 text-center md:flex">
+            
+            <div class="w-full px-4 lg:w-1/3 md:w-1/2  sm:text-center md:text-left">
+              <h2 class="mb-2 font-bold tracking-widest text-white pl-0">
+                <span class="w-full ml-0">About</span> 
+                <hr class="border-b-2 sm:w-full md:w-1/2 pl-0 ml-0">
+              </h2>
+              <ul class="mb-8 space-y-2 text-sm list-none">
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500 ">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Business Contacts</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Community</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Blogs</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Terms</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Privacy</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">News</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full px-4 lg:w-1/3 md:w-1/2  sm:text-center md:text-left">
+              <h2 class="mb-2 font-bold tracking-widest text-white">
+                <span class=" w-3/6">Service</span> 
+                <hr class="border-b-2 sm:w-full md:w-1/2 pl-0 ml-0">
+              </h2>
+              <ul class="mb-8 space-y-2 text-sm list-none">
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Mobile Application</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Referral </a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Affilicate</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Historical Market Data</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Learn</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full px-2 lg:w-1/3 md:w-1/2 sm:text-center md:text-left">
+              <h2 class="mb-2 font-bold tracking-widest text-white">
+                <span class="w-3/6">Support</span> 
+                <hr class="border-b-2 sm:w-full md:w-1/2 pl-0 ml-0">
+              </h2>
+              <ul class="mb-8 space-y-2 text-sm list-none">
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">FAQs</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Contact Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Submit & Request</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-yellow-500">Fees</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full px-4 lg:w-1/3 md:w-1/2  sm:text-center md:text-left "> 
+              <h2 class="mb-2 font-bold tracking-widest text-white">
+                <span class="w-3/6">Community</span> 
+                <hr class="border-b-2 sm:w-full md:w-1/2 pl-0 ml-0">
+              </h2>
+              <div class="flex justify-center md:justify-start mt-4 lg:mt-2 sm:text-center md:text-left">
+                <a>
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6 text-gray-300 hover:text-blue-600"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-3">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6 text-gray-300 hover:text-blue-300"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-3">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-6 h-6 text-gray-300 hover:text-pink-400"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-3">
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                    class="w-6 h-6 text-gray-300 hover:text-blue-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="none"
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                    ></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="flex justify-center -mt-12 border-t-2 border-gray-900 py-10 bg-black">
+          <p class="text-base text-gray-300 ">Copyright © 2022 arifkhan-silicornya. All rights reserved.</p>
+        </div>
+      </footer>
+    
+    
+    
+  </body>
+</html>
